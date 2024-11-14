@@ -8,8 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        green:"#25855a",
+      },
+      backgroundImage:{
+        "overlay-bg":"url('/overlay.svg')"
       },
     },
   },

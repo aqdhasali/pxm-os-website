@@ -1,7 +1,7 @@
 export default function ProductColors(){
     return(
         <div className="flex flex-col gap-2 w-96 p-5 m-5 bg-[#ffffff] rounded-lg">
-            <h2 className="text-2xl font-semibold tracking-tight">Product Colors</h2>
+            <h2 className="text-xl font-semibold tracking-tight">Product Colors</h2>
             <div className="flex gap-2">
                 <div className="relative group">
                     <img className="h-10 w-10" src="Ellipse1.svg" alt="Ellipse8" />

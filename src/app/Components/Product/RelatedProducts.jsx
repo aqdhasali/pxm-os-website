@@ -2,7 +2,7 @@ export default function RelatedProducts(){
     return(
         <div className="flex flex-col gap-5 w-96 p-5 m-5 bg-[#ffffff] rounded-lg">
             <div>
-                <h2 className="text-2xl font-semibold tracking-tight">Related Products</h2>
+                <h2 className="text-xl font-semibold tracking-tight">Related Products</h2>
             </div>
 
             <div className="flex items-center  justify-center gap-2 ml-7 ">

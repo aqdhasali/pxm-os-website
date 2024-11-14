@@ -1,7 +1,7 @@
 export default function Special(){
     return(
         <div className="flex flex-col gap-5 w-96 p-5 m-5 bg-[#ffffff] rounded-lg">
-            <h2 className="text-2xl font-semibold tracking-tight">What's Special?</h2>
+            <h2 className="text-xl font-semibold tracking-tight">What's Special?</h2>
 
             <div className="flex flex-col gap-5">
                 <div className="flex gap-2">

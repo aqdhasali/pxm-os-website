@@ -1,7 +1,7 @@
 export default function ProductDetails(){
     return(
         <div className="flex flex-col gap-2 p-5 m-5 bg-[#ffffff] rounded-lg w-96">
-            <h2 className="text-2xl font-semibold tracking-tight">Product Details</h2>
+            <h2 className="text-xl font-semibold tracking-tight">Product Details</h2>
             <div className="flex items-center justify-center gap-5">
                 <h3 className="text-xl font-semibold">Volume</h3>
                 <p className="text-md">0.5L | 1L | 2.5L | 4L | 5L | 6L 

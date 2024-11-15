@@ -47,8 +47,8 @@ export default function Sayerlack(){
                 <div className="w-16 text-center p-2 rounded-lg border border-green text-green">Paint</div>
             </div>
 
-            <div className="mb-5 flex justify-center items-center w-64 h-16 bg-black cursor-pointer rounded-lg" onClick={handleFeedbackClick}>
-                <h2 className="text-2xl font-medium text-white text-center">Feedback / Inquiry</h2>
+            <div className="mb-5 flex justify-center items-center w-52 h-12 bg-black cursor-pointer rounded-lg" onClick={handleFeedbackClick}>
+                <h2 className="text-xl  text-white text-center">Feedback / Inquiry</h2>
             </div>
 
             {showForm && (

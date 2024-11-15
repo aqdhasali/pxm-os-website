@@ -1,6 +1,7 @@
 "use client";
 
 import {useState} from "react";
+import "../../globals.css";
 
 
 export default function Sayerlack(){
@@ -16,7 +17,7 @@ export default function Sayerlack(){
     };
 
     return(
-        <div className="flex flex-col gap-5 items-center justify-center rounded-lg m-5 w-96 h-auto bg-[#ffffff]">
+        <div className="sm-screen md-screen lg-screen flex flex-col gap-5 items-center justify-center rounded-lg m-6 sm:m-10 p-10 w-96 h-auto bg-[#ffffff]">
             <div>
                 <img src="sayerlack-logo.svg"></img>
             </div>
@@ -38,7 +39,7 @@ export default function Sayerlack(){
                 <div className="w-16 text-center p-2 rounded-lg border border-green text-green">Paint</div>
             </div>
 
-            <div className="mb-5 flex justify-center items-center w-72 h-16 bg-black cursor-pointer rounded-lg" onClick={handleFeedbackClick}>
+            <div className="mb-5 flex justify-center items-center w-64 h-16 bg-black cursor-pointer rounded-lg" onClick={handleFeedbackClick}>
                 <h2 className="text-2xl font-medium text-white text-center">Feedback / Inquiry</h2>
             </div>
 

@@ -33,7 +33,7 @@ export default function Header(){
 
     return(
         <>
-            <div className="bg-[#ffffff] w-screen h-44">
+            <div className="bg-[#ffffff] md-screen-width w-full h-44 sm:w-screen md:w-screen lg:w-screen">
                 {/* Logo and Language Button */}
                 <div className="flex justify-between p-5">
                     <img src="JAT-Logo.svg" alt="jat-logo"></img>

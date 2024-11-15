@@ -1,6 +1,6 @@
 export default function Offer(){
     return(
-        <div className="relative w-96 m-5">
+        <div className="relative sm-screen md-screen lg-screen w-96 m-6">
             <img className="w-full rounded-lg " src="Group.svg"></img>
             <div
                 className="absolute top-0 left-0 w-full h-full bg-blue-800 mix-blend-multiply rounded-lg opacity-50"

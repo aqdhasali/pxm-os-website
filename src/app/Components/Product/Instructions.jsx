@@ -1,13 +1,13 @@
 export default function Instructions(){
     return(
-        <div className="flex flex-col gap-2 w-96 p-5 m-5 bg-[#ffffff] rounded-lg">
+        <div className="flex flex-col sm-screen  md-screen lg-screen gap-2 w-96 p-5 m-6 bg-[#ffffff] rounded-lg">
             <h2 className="text-xl font-semibold tracking-tight">Instruction Manual</h2>
 
             <div className="flex items-center justify-between p-2 border w-full">
                 <div className="flex gap-2">
                     <img className="h-14 w-14" src="doc-img.svg"></img>
                     <div>
-                        <h2 className="text-lg font-semibold">Tips for a better quote</h2>
+                        <h2 className="text-md font-semibold">Tips for a better quote</h2>
                         <p>2 pages, 1.4 MB</p>
                     </div>
                 </div>

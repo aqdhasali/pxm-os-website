@@ -2,6 +2,12 @@
 
 import {useState} from "react";
 import "../../globals.css";
+import {Inter} from "next/font/google";
+
+const inter = Inter({
+    subsets : ["latin"],
+    weight: ["100", "200","300","400"],
+  })
 
 
 export default function Sayerlack(){
@@ -16,8 +22,10 @@ export default function Sayerlack(){
         setShowForm(false);
     };
 
+    
+
     return(
-        <div className="sm-screen md-screen lg-screen flex flex-col gap-5 items-center justify-center rounded-lg m-6 sm:m-10 p-10 w-96 h-auto bg-[#ffffff]">
+        <div className={`${inter.className} sm-screen md-screen lg-screen flex flex-col gap-5 items-center justify-center rounded-lg m-6 sm:m-10 p-10 w-96 h-auto bg-[#ffffff]`}>
             <div>
                 <img src="sayerlack-logo.svg"></img>
             </div>

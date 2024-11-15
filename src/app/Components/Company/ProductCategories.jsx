@@ -1,6 +1,6 @@
 export default function ProductCatergories(){
     return(
-        <div className="flex flex-col gap-5 rounded-lg w-96 bg-[#ffffff] p-5 m-5 sm-screen md-screen lg-screen">
+        <div className="flex flex-col gap-5 rounded-lg w-96 bg-[#ffffff] p-5 m-5 sm-screen md-screen lg-screen sm-screen-2">
             <h1 className="text-xl font-semibold tracking-tight">Product Categories</h1>
 
             <div className="flex justify-center gap-x-7 items-center">

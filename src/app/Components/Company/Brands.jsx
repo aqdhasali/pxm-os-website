@@ -1,6 +1,6 @@
 export default function Brands(){
     return(
-        <div className="flex flex-col sm-screen md-screen lg-screen m-5 p-5 w-96 bg-[#ffffff] rounded-lg ">
+        <div className="flex flex-col sm-screen md-screen sm-screen-2 lg-screen m-5 p-5 w-96 bg-[#ffffff] rounded-lg ">
             <h2 className="text-xl font-semibold tracking-tight">Brands</h2>
 
             <div className="flex justify-center items-center  gap-x-5">

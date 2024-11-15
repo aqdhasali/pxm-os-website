@@ -1,6 +1,6 @@
 export default function JatBanner(){
     return(
-        <div className="flex gap-2 m-5">   
+        <div className="flex gap-2 m-5 sm-screen md-screen lg-screen">   
             <div className="flex flex-col items-center gap-2">
                 <div className="relative">
                     <img src="slide-banner.svg"></img>

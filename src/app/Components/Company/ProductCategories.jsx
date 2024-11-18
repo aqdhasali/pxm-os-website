@@ -15,7 +15,7 @@ export default function ProductCatergories(){
                 </div>
             </div>
 
-            <div className="flex items-center justify-center bg-green w-full rounded-md text-2xl text-white h-14">View All</div>
+            <div className="flex items-center justify-center bg-green w-full rounded-md text-xl text-white h-10">View All</div>
 
         </div>
     )

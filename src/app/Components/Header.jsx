@@ -33,7 +33,7 @@ export default function Header(){
 
     return(
         <>
-            <div className="bg-[#ffffff] md-screen-width w-full h-44 sm:w-screen md:w-screen lg:w-screen">
+            <div className="bg-[#ffffff] md-screen-width w-full fixed top-0 h-44 z-50 shadow-md sm:w-screen md:w-screen lg:w-screen">
                 {/* Logo and Language Button */}
                 <div className="flex justify-between p-5">
                     <img src="JAT-Logo.svg" alt="jat-logo"></img>
@@ -51,10 +51,10 @@ export default function Header(){
                 </div>
 
                 {/* Product and company buttons */}
-                <div className="flex m-5 border-2 h-10 border-green rounded-md">
+                <div className="flex m-5 border-2 h-10 border-green rounded-lg overflow-hidden cursor-pointer">
                     <div 
-                    className ={`flex items-center justify-center w-1/2 bg-green text-center ${
-                            selectedContent === 'product' ? 'bg-green text-white' : 'bg-white text-black'
+                    className ={`flex items-center justify-center w-1/2 text-center ${
+                            selectedContent === 'product' ? 'bg-green border-green text-white rounded-md ' : 'rounded-md bg-white text-black'
                         }`}
                     onClick ={() => handleTabClick('product')}
                     >
@@ -63,20 +63,21 @@ export default function Header(){
                     <div 
                     onClick={() => handleTabClick('company')}
                     className = {`flex items-center justify-center w-1/2 text-center cursor-pointer ${
-                        selectedContent === 'company' ? 'bg-green text-white' : 'bg-white text-black'
+                        selectedContent === 'company' ? 'bg-green border-green rounded-md text-white' : 'rounded-md bg-white text-black'
                     }`}>
                         <span>COMPANY</span>
                     </div>
                 </div>
 
-                <div className="w-screen h-1 bg-[#a0aec0]">
+                <div className="¬w-screen h-1 bg-[#a0aec0]">
                     <div className="h-full bg-green" style={{ width: `${25}%`}}></div>
                 </div>
+            </div>
 
 
-                <div>
+                <div className=" mb-20">
                     {selectedContent === 'product' && (
-                        <div>
+                        <div className="mt-44">
                             <ProductImage />
                             <Sayerlack />
                             <SayerlackContent />
@@ -92,7 +93,7 @@ export default function Header(){
                         </div>
                     )}
                     {selectedContent === 'company' && (
-                        <div>
+                        <div className="mt-48">
                             <Jat />
                             <JatAbout />
                             <Certifications />
@@ -103,7 +104,7 @@ export default function Header(){
                         </div>
                     )}
                 </div>
-            </div>
+
         </>
         
     )

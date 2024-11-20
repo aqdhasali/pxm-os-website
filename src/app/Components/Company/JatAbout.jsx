@@ -1,9 +1,9 @@
 export default function JatAbout(){
     return(
-        <div className="flex flex-col gap-2 sm-screen md-screen lg-screen sm-screen-2 p-5 m-5 w-96 bg-[#ffffff] rounded-lg">
+        <div className="flex flex-col gap-2 sm-screen md-screen lg-screen sm-screen-2 p-5 m-5 w-96 bg-[#ffffff] rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl">
             <h2 className="text-left text-xl font-semibold">About Marie</h2>
-            <p>Since its incorporation in 1993, JAT Holdings PLC has grown in financial strength, corporate reputation and brand recognition reaching many milestones in its journey of becoming the leader in wood coatings in Sri Lanka. </p>
-            <div className="flex items-center justify-center bg-green w-full rounded-md text-xl text-white h-10">Learn More</div>
+            <p className="font-light">Since its incorporation in 1993, JAT Holdings PLC has grown in financial strength, corporate reputation and brand recognition reaching many milestones in its journey of becoming the leader in wood coatings in Sri Lanka. </p>
+            <div className="flex items-center justify-center bg-green w-full rounded-md text-xl text-white h-12">Learn More</div>
         </div>
     )
 }

@@ -1,13 +1,13 @@
 export default function Jat(){
     return(
-        <div className="m-5 flex gap-5 sm-screen md-screen lg-screen sm-screen-2 flex-col items-center justify-center w-96 bg-[#ffffff] rounded-lg">
+        <div className="m-5 flex gap-5 sm-screen md-screen lg-screen sm-screen-2 flex-col items-center justify-center w-96 bg-[#ffffff] rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl">
             <img className="mt-5  w-56 " src="JAT-Logo.svg"></img>
 
             <div className="flex gap-2">
-                <img src="BsGlobe.svg"></img>
-                <img src="BsFacebook.svg"></img>
-                <img src="BsInstagram.svg"></img>
-                <img src="BsLinkedin.svg"></img>
+                <a href="https://jatholdings.com/" className="cursor-pointer" ></a><img src="BsGlobe.svg"></img>
+                <a href="https://web.facebook.com/jattransformingspaces"></a><img src="BsFacebook.svg"></img>
+                <a href="https://www.instagram.com/jatholdingsplc/" className="cursor-pointer"><img src="BsInstagram.svg"></img> </a>
+                <a href="https://www.linkedin.com/company/jatholdings/" className="cursor-pointer" ></a><img src="BsLinkedin.svg"></img>
             </div>
 
             <div className="flex flex-col items-center mb-5">

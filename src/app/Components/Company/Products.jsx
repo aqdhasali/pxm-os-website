@@ -1,6 +1,6 @@
 export default function Product(){
     return (
-        <div className="flex flex-col gap-5 rounded-lg w-96 bg-[#ffffff] p-5 mb-20 m-5 sm-screen sm-screen-2 md-screen lg-screen">
+        <div className="flex flex-col gap-5 rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl w-96 bg-[#ffffff] p-5 mb-20 m-5 sm-screen sm-screen-2 md-screen lg-screen">
             <h2 className="text-xl font-semibold tracking-tight">Products</h2>
 
             <div className="flex justify-center items-center text-center  gap-x-5">
@@ -15,7 +15,7 @@ export default function Product(){
                 </div>
             </div>
 
-            <div className="flex items-center justify-center bg-green w-full rounded-md text-xl text-white h-10">View All</div>
+            <div className="flex items-center justify-center bg-green w-full rounded-md text-xl text-white h-12">View All</div>
 
 
         </div>

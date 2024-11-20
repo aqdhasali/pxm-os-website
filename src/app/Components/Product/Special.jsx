@@ -6,12 +6,12 @@ export default function Special(){
             <div className="flex flex-col gap-5">
                 <div className="flex gap-2">
                     <img src="MdStream.svg"></img>
-                    <p className="text-lg font-semibold">UV Protection</p>
+                    <p className="text-lg font-medium">UV Protection</p>
                 </div>
                 
                 <div className="flex gap-2">
                     <img src="IoBarbellOutline.svg"></img>
-                    <p className="text-lg font-semibold">Strong Adhesive and Resistance</p>
+                    <p className="text-lg font-medium">Strong Adhesive and Resistance</p>
                 </div>
             </div>
 

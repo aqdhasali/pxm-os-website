@@ -25,30 +25,30 @@ export default function Sayerlack(){
     
 
     return(
-        <div className={`${inter.className} sm-screen sm-screen-2 md-screen lg-screen flex flex-col gap-5 items-center justify-center rounded-lg m-10 pt-5 w-96 h-auto bg-[#ffffff]`}>
+        <div className={`${inter.className} sm-screen sm-screen-2 md-screen lg-screen flex flex-col gap-5 items-center justify-center rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl m-6 pt-5 w-96 h-auto bg-[#ffffff]`}>
             <div>
                 <img src="sayerlack-logo.svg"></img>
             </div>
 
             <div className="flex gap-2">
-                <img src="BsGlobe.svg"></img>
-                <img src="BsFacebook.svg"></img>
-                <img src="BsInstagram.svg"></img>
-                <img src="BsLinkedin.svg"></img>
+                <a className="cursor-pointer" href="https://www.sayerlack.com/"><img src="BsGlobe.svg"></img></a>
+                <a className="cursor-pointer" href="https://web.facebook.com/sayerlackworld"><img src="BsFacebook.svg"></img></a>
+                <a className="cursor-pointer" href="https://www.instagram.com/sayerlackworld/"><img src="BsInstagram.svg"></img> </a>
+                <a className="cursor-pointer" href="https://www.linkedin.com/company/sayerlack/"><img src="BsLinkedin.svg"></img></a>
             </div>
 
             <div className="flex flex-col gap-2 text-center">
-                <h2 className="text-2xl  font-semibold">Sayerlack Waterbase Exterior Support</h2>
+                <h2 className="text-2xl  font-semibold">Sayerlack Waterbase Exterior Topcoat</h2>
                 <p>Preserving the Integrity of Wooden Surfaces</p>
             </div>
 
-            <div className="flex gap-5 ">
-                <div className="p-2 rounded-lg border border-green text-green">Waterbase</div>
-                <div className="w-16 text-center p-2 rounded-lg border border-green text-green">Paint</div>
+            <div className="flex gap-2 ">
+                <div className="flex items-center justify-center h-8 w-28 rounded-lg border border-green text-green">Waterbase</div>
+                <div className="flex items-center justify-center w-28 h-8 text-center rounded-lg border border-green text-green">Paint</div>
             </div>
 
-            <div className="mb-5 flex justify-center items-center w-52 h-12 bg-black cursor-pointer rounded-lg" onClick={handleFeedbackClick}>
-                <h2 className="text-xl  text-white text-center">Feedback / Inquiry</h2>
+            <div className="mb-5 flex justify-center items-center w-60 h-14 bg-black cursor-pointer rounded-lg" onClick={handleFeedbackClick}>
+                <h2 className="text-xl text-white text-center">Feedback / Inquiry</h2>
             </div>
 
             {showForm && (
@@ -67,8 +67,8 @@ export default function Sayerlack(){
                         
             
                         <div>
-                            <div className="flex w-full border-2 h-10 border-green rounded-md">
-                                <div className="flex items-center justify-center w-48 bg-green text-center">
+                            <div className="flex w-full border-2  h-10 border-green rounded-md">
+                                <div className="flex items-center justify-center w-48 bg-green rounded-md text-center">
                                     <span className="text-white">Feedback</span>
                                 </div>
                                 <div className="flex items-center justify-center w-48 text-center">
@@ -99,7 +99,7 @@ export default function Sayerlack(){
                             </div>
                         </div>
             
-                        <div className="flex items-center justify-center bg-green w-full rounded-md text-xl text-white h-14">Submit</div>
+                        <div className="flex items-center justify-center bg-green w-full rounded-md text-xl text-white h-12">Submit</div>
                 </div>
             </div>
             )}

@@ -1,6 +1,6 @@
 export default function RelatedProducts(){
     return(
-        <div className="flex flex-col sm-screen-2 sm-screen md-screen lg-screen gap-5 w-96 p-5 m-6 bg-[#ffffff] rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl">
+        <div className="flex flex-col sm-screen-2 sm-screen md-screen lg-screen gap-5 w-96 p-5 m-6 bg-[#ffffff] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl">
             <div>
                 <h2 className="text-xl font-semibold tracking-tight">Related Products</h2>
             </div>

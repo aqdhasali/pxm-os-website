@@ -25,7 +25,7 @@ export default function Sayerlack(){
     
 
     return(
-        <div className={`${inter.className} sm-screen sm-screen-2 md-screen lg-screen flex flex-col gap-5 items-center justify-center rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl m-6 pt-5 w-96 h-auto bg-[#ffffff]`}>
+        <div className={`${inter.className} sm-screen sm-screen-2 md-screen lg-screen flex flex-col gap-5 items-center justify-center rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl m-6 pt-5 w-96 h-auto bg-[#ffffff]`}>
             <div>
                 <img src="sayerlack-logo.svg"></img>
             </div>

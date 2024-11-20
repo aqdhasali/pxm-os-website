@@ -1,6 +1,6 @@
 export default function Certifications(){
     return(
-        <div className="flex flex-col sm-screen sm-screen-2 md-screen lg-screen gap-2 w-96 p-5 m-6 bg-[#ffffff] rounded-tl-xl rounded-tr-xl rounded-bl-xl rounded-br-xl">
+        <div className="flex flex-col sm-screen sm-screen-2 md-screen lg-screen gap-2 w-96 p-5 m-6 bg-[#ffffff] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl">
             <h2 className="text-xl font-semibold tracking-tight">Certifications</h2>
 
             <div>

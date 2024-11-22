@@ -41,6 +41,12 @@
     }
 }
 
+
+@media(max-width:375px) and (max-height:667px){
+    .xr-screen{
+        margin:0
+    }
+}
 .no-scrollbar::-webkit-scrollbar{
     display: none !important;
 }

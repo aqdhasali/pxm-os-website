@@ -64,7 +64,7 @@ export default function Header(){
             <div className="bg-[#ffffff]  md-screen-width w-full fixed top-0 h-44 z-50 shadow-md sm:w-screen md:w-screen lg:w-screen">
                 {/* Logo and Language Button */}
                 <div className=" scrollbar-hide flex justify-between p-5">
-                    <img className="w-36" src="JAT-logo-green.png" alt="jat-logo"></img>
+                    <img className="w-32" src="JAT-logo-green.png" alt="jat-logo"></img>
 
                     <div>
                         <div className="flex items-center justify-center gap-4">

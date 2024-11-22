@@ -1,6 +1,6 @@
 export default function Product(){
     return (
-        <div className="flex flex-col gap-5 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl w-96 bg-[#ffffff] p-5 mb-20 m-5 sm-screen sm-screen-2 md-screen lg-screen">
+        <div className="flex flex-col gap-5 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl w-auto  bg-[#ffffff] p-5 mb-20 m-5 sm-screen sm-screen-2 md-screen lg-screen">
             <h2 className="text-xl font-bold tracking-tight">Products</h2>
 
             <div className="flex justify-center items-center text-center  gap-x-5">

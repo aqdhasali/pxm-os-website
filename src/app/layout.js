@@ -20,18 +20,8 @@ export default function RootLayout({ children }) {
       </head>
       
       <body
-        className={`${inter.className} bg-[#e2e8f0] antialiased`}
+        className={`${inter.className} bg-[#e2e8f0] antialiased no-scrollbar`}
       >
-        {/* <Header />
-        <Jat />
-        <JatAbout />
-        <Certifications />
-        <JatBanner/>
-        <Brands />
-        <ProductCatergories />
-        <Product/>
-        <FeedbackForm /> */}
-
         <Header />
         
         {children}

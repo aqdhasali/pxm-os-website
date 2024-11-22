@@ -63,7 +63,7 @@ export default function Header(){
         <>
             <div className="bg-[#ffffff]  md-screen-width w-full fixed top-0 h-44 z-50 shadow-md sm:w-screen md:w-screen lg:w-screen">
                 {/* Logo and Language Button */}
-                <div className="flex justify-between p-5">
+                <div className=" scrollbar-hide flex justify-between p-5">
                     <img src="JAT-Logo.svg" alt="jat-logo"></img>
 
                     <div>
@@ -81,7 +81,7 @@ export default function Header(){
                 {showPopup &&(
                     <div className="absolute items-center top-14 w-28 right-1 bg-[#ffffff] shadow-lg rounded-lg">
                         <ul>
-                            {["EN","SIN","TAM"].map((language) =>(
+                            {["EN","SIN","AR"].map((language) =>(
                                 <li key={language}
                                 className={`p-2 text-center cursor-pointer hover:bg-gray-100 ${selectedLanguage == language ? "font-bold" : ""}`}
                                 onClick={() => handleLanguageChange(language)}>
@@ -95,7 +95,7 @@ export default function Header(){
                 {/* Product and company buttons */}
                 <div className="flex m-5 border-2 h-10 border-green rounded-lg overflow-hidden cursor-pointer">
                     <div 
-                    className ={`flex items-center justify-center bg-green transition-colors w-1/2 text-center${
+                    className ={`flex items-center justify-center bg-green w-1/2 text-center${
                             selectedContent === 'product' ? 'bg-green border-green rounded-md text-white' : 'rounded-md bg-white text-black'
                         }`}
                     onClick ={() => handleTabClick('product')}
@@ -104,7 +104,7 @@ export default function Header(){
                     </div>
                     <div 
                     onClick={() => handleTabClick('company')}
-                    className = {`flex items-center justify-center w-1/2 text-center cursor-pointer transition-colors ${
+                    className = {`flex items-center justify-center w-1/2 text-center cursor-pointer ${
                         selectedContent === 'company' ? 'bg-green border-green rounded-md text-white' : 'rounded-md bg-white text-black'
                     }`}>
                         <span>COMPANY</span>
@@ -117,7 +117,7 @@ export default function Header(){
             </div>
 
 
-                <div className="mb-20">
+                <div className="mb-20 scrollbar-hide ">
                     {selectedContent === 'product' && (
                         <div className="mt-44">
                             <ProductImage />
@@ -135,7 +135,7 @@ export default function Header(){
                         </div>
                     )}
                     {selectedContent === 'company' && (
-                        <div className="mt-48">
+                        <div className="mt-48 scrollbar-hide ">
                             <Jat />
                             <JatAbout />
                             <Certifications />

@@ -8,7 +8,7 @@ export default function Offer(){
 
             <div className="absolute gap-2 inset-0 flex flex-col justify-center text-white items-center">
                 <h2 className="text-4xl font-bold ">20% OFF</h2>
-                <p className="text-lg">For all Sayerlack Products</p>
+                <p className="font-light">For all Sayerlack Products</p>
                 <div className="flex items-center justify-center font-light w-32 h-9 rounded-md p-2 text-center border border-whiter text-white">
                     VIEW DEAL
                 </div>

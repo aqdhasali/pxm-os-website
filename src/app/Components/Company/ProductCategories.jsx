@@ -1,7 +1,7 @@
 export default function ProductCatergories(){
     return(
         <div className="flex flex-col gap-5 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl w-96 bg-[#ffffff] p-5 m-5 sm-screen md-screen lg-screen sm-screen-2">
-            <h1 className="text-xl font-semibold tracking-tight">Product Categories</h1>
+            <h1 className="text-xl font-bold tracking-tight">Product Categories</h1>
 
             <div className="flex justify-center gap-x-7 items-center">
                 <div className="flex flex-col items-center">
@@ -15,7 +15,7 @@ export default function ProductCatergories(){
                 </div>
             </div>
 
-            <div className="flex items-center justify-center bg-green w-full rounded-md text-xl text-white h-12">View All</div>
+            <div className="flex items-center justify-center bg-green w-full rounded-md text-l text-white h-12">View All</div>
 
         </div>
     )

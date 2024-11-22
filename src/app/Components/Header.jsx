@@ -64,16 +64,16 @@ export default function Header(){
             <div className="bg-[#ffffff]  md-screen-width w-full fixed top-0 h-44 z-50 shadow-md sm:w-screen md:w-screen lg:w-screen">
                 {/* Logo and Language Button */}
                 <div className=" scrollbar-hide flex justify-between p-5">
-                    <img src="JAT-Logo.svg" alt="jat-logo"></img>
+                    <img className="w-36" src="JAT-logo-green.png" alt="jat-logo"></img>
 
                     <div>
                         <div className="flex items-center justify-center gap-4">
                             <div className="flex items-center justify-center gap-2 w-28 h-11 border-2 border-black rounded-md">
-                                <img className="w-5 h-5" src="left-icon.png"></img>
+                                <img className="" src="left-icon.svg"></img>
                                 <span>{selectedLanguage}</span>
-                                <img className="w-5 h-5" src="right-icon.png" onClick={togglePopup}></img>
+                                <img className="w-8" src="right-icon.svg" onClick={togglePopup}></img>
                             </div>
-                            <img className="w-5 h-5" src="FiShare2.png"></img>
+                            <img className="w-5 h-5" src="share.svg"></img>
                         </div>
                     </div>
                 </div>

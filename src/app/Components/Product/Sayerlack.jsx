@@ -38,7 +38,7 @@ export default function Sayerlack(){
             </div>
 
             <div className="flex flex-col gap-2 text-center">
-                <h2 className="text-2xl  font-semibold">Sayerlack Waterbase Exterior Topcoat</h2>
+                <h2 className="text-2xl  font-bold">Sayerlack Waterbase Exterior Topcoat</h2>
                 <p>Preserving the Integrity of Wooden Surfaces</p>
             </div>
 

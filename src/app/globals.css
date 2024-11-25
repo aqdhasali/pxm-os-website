@@ -55,3 +55,20 @@
     -ms-overflow-style: none !important;
     scrollbar-width: none !important;
 }
+
+
+.embla {
+    overflow: hidden;
+    width: 100%; /* Adjust width as needed */
+}
+
+.embla__container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Optional, for spacing */
+}
+
+.embla__slide {
+    position: relative;
+    min-width: 100%; /* Full width slide */
+}

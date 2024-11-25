@@ -111,7 +111,7 @@ export default function Header(){
                     </div>
                 </div>
 
-                <div className="¬w-screen h-1 bg-[#a0aec0]">
+                <div className="¬w-screen h-1 bottom-0 bg-[#a0aec0]">
                     <div className="h-full bg-green" style={{ width: `${scrollProgress}%`}}></div>
                 </div>
             </div>

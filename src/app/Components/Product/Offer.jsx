@@ -10,7 +10,7 @@ export default function Offer(){
                 <h2 className="text-4xl font-bold ">20% OFF</h2>
                 <p className="font-light">For all Sayerlack Products</p>
                 <div className="flex items-center justify-center font-light w-32 h-9 rounded-md p-2 text-center border border-whiter text-white">
-                    VIEW DEAL
+                    <a href="https://whitebyjat.com/">VIEW DEAL</a>
                 </div>
             </div>
         </div>

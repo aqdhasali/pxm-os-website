@@ -79,7 +79,7 @@ export default function Header(){
                 </div>
 
                 {showPopup &&(
-                    <div className="absolute items-center top-14 w-28 right-1 bg-[#ffffff] shadow-lg rounded-lg">
+                    <div className="absolute items-center top-14 w-28 right-2 bg-[#f3f3f3] shadow-lg rounded-lg">
                         <ul>
                             {["EN","SIN","AR"].map((language) =>(
                                 <li key={language}

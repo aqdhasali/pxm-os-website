@@ -7,12 +7,12 @@ export default function RelatedProducts(){
 
             <div className="flex items-center  justify-center gap-2 ml-7 ">
                 <div className="flex items-center text-center flex-col gap-2 ">
-                    <img className="w-32 h-32" src="pu-paint.svg"></img>
+                    <img className="w-48 " src="pu-paint.svg"></img>
                     <p className="text-lg">Sayerlack PU Paints</p>
                 </div>
                 
                 <div className="flex items-center text-center flex-col gap-2 ">
-                    <img className="w-32 h-32 sm-width-2" src="effects-paint.svg"></img>
+                    <img className="w-28 rounded-lg" src="SAYERLACK-WB.jpg"></img>
                     <p className="text-lg">Sayerlack Special Effects Paints</p>
                 </div>
             </div>

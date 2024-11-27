@@ -5,12 +5,12 @@ export default function Brands(){
 
             <div className="flex justify-center items-center  gap-x-5">
                 <div className="flex flex-col items-center">
-                    <img className="w-32" src="sayerlack-sm-logo.svg"></img>
+                    <img className="w-32" src="sayerlack-logo.png"></img>
                     <p>Sayerlack</p>
                 </div>
 
                 <div className="flex flex-col items-center">
-                    <img className="w-32" src="hm-logo.svg"></img>
+                    <img className="w-32" src="hermanmiller-logo2.png"></img>
                     <p>Herman Miller</p>
                 </div>
             </div>

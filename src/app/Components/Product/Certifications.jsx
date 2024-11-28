@@ -2,7 +2,21 @@ import { useState } from "react"
 
 export default function Certifications(){
     const [boxHeight,setboxHeight] = useState('170px')
+    const [text, setText]  = useState('View All')
+    const [isActive, setIsActive] = useState(false)
 
+    const handleClick = () =>{
+        setIsActive(!isActive)
+
+        if(isActive){
+            setboxHeight('170px')
+            setText('View All')
+        } else{
+            setboxHeight('auto')
+            setText('View Less')
+        }
+
+    }
     return(
         <div className="flex flex-col sm-screen sm-screen-2 md-screen lg-screen gap-2 w-auto p-5 m-6 bg-[#ffffff] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl">
             <h2 className="text-xl font-bold tracking-tight">Certifications</h2>
@@ -49,7 +63,7 @@ export default function Certifications(){
                 </div>
             </div>
 
-            <div className="flex items-center justify-center bg-green w-full rounded-md text-l text-white h-12" onClick={() => setboxHeight('auto')}>View All</div>
+            <div className="flex items-center justify-center bg-green w-full rounded-md text-l text-white h-12" onClick={() => handleClick()}>{text}</div>
 
         </div>
     )

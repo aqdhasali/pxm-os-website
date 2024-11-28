@@ -3,10 +3,21 @@ import { useState } from "react"
 export default function Brands(){
 
     const [boxHeight, setBoxHeight] = useState('180px')
+    const [text, setText] = useState('View All')
+    const [isActive, setIsActive] = useState(false)
 
 
     const handleClick = () =>{
-        setBoxHeight('auto')
+        setIsActive(!isActive)
+
+        if(isActive){
+            setBoxHeight('180px')
+            setText('View All')
+        } else{
+            setBoxHeight('auto')
+            setText('View Less')
+        }
+        
     }
 
     return(
@@ -63,7 +74,7 @@ export default function Brands(){
 
             </div>
 
-            <div className="flex items-center justify-center bg-green w-full rounded-md text-l text-white h-12" onClick={() => handleClick()}>View All</div>
+            <div className="flex items-center justify-center bg-green w-full rounded-md text-l text-white h-12" onClick={() => handleClick()}>{text}</div>
 
         </div>
     )

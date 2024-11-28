@@ -2,12 +2,23 @@ import { useState } from "react"
 
 export default function SayerlackContent(){
 
-    const [boxHeight, setboxHeight] = useState('200px')
+    const [boxHeight, setboxHeight] = useState('199px')
+    const [text, setText] = useState('Learn More')
+    const [isActive, setIsActive] = useState('false')
     
 
 
     const handleClick = () => {
-        setboxHeight('auto')
+        setIsActive(!isActive)
+
+        if(isActive){
+            setboxHeight('199px')
+            setText('Learn More')
+        } else{
+            setboxHeight('auto')
+            setText('Hide')
+        }
+        
     }
 
     return(
@@ -17,7 +28,7 @@ export default function SayerlackContent(){
                 With 28 years of experience in distributing Sayerlack in Sri Lanka and across South Asia, JAT Holdings is recognized as the number 1 partner for Sayerlack in the world. JAT Holdings PLC was the pioneer to introduce Waterbase wood coatings to Sri Lanka. Water-based coatings revolutionized the industry by giving consumers an environmentally friendly alternative with 95% lower harmful emissions than synthetic products, ensuring workers’ health and safety.
                 Sayerlack is the market leader in wood coatings and a trusted brand that is loved amongst Sri Lankan customers in the residential and industrial sectors. The brand has been recognized amongst the Top 100 Most Valuable Consumer Brands in Sri Lanka in the Brands Annual 2022 list by LMD.
             </p>
-            <div className="flex items-center justify-center bg-green w-full rounded-md text-l text-white h-12"  onClick={ () => handleClick()}>Learn More</div>
+            <div className="flex items-center justify-center bg-green w-full rounded-md text-l text-white h-12"  onClick={ () => handleClick()}>{text}</div>
         </div>
     )
 }

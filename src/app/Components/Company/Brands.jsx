@@ -1,7 +1,8 @@
+import { useTranslations } from "next-intl"
 import { useState } from "react"
 
 export default function Brands(){
-
+    const t = useTranslations('brands')
     const [boxHeight, setBoxHeight] = useState('180px')
     const [text, setText] = useState('View All')
     const [isActive, setIsActive] = useState(false)
@@ -22,7 +23,7 @@ export default function Brands(){
 
     return(
         <div className="flex flex-col gap-5 m-5 p-5 w-auto bg-[#ffffff] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl ">
-            <h2 className="text-xl font-bold tracking-tight">Brands</h2>
+            <h2 className="text-xl font-bold tracking-tight">{t('title')}</h2>
 
             <div className="grid grid-cols-2 items-center overflow-hidden gap-7" style={{height: boxHeight}}>
                 <div className="flex flex-col items-center rounded-lg shadow-lg">

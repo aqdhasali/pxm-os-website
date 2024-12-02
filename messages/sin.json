@@ -1,0 +1,71 @@
+{
+    "Header":{
+        "company":"සමාගම",
+        "product":"නිෂ්පාදනය"
+    },
+    "Sayerlack":{
+        "title":"සයර්ලැක් වෝටර් බේස් බාහිර ඉහළ කබාය",
+        "about":"ලී මතුපිට අඛණ්ඩතාව ආරක්ෂා කිරීම",
+        "waterbase":"ජල පදනම",
+        "paint":"තීන්ත",
+        "button-text":"ප්‍රතිපෝෂණ / විමසීම්",
+        "form-about":"Fill out the form below with your feedback or inquiries",
+        "feedback":"Feedback",
+        "inquiry":"Inquiry",
+        "submit":"Submit"
+    },
+    "Sayerlack-Content":{
+        "title":"ජල පදනම ගැන",
+        "about":" දැව නිම කිරීම සඳහා නිමි කොටස ආකර්ශනීය පෙනුමක්, හොඳින් ක්‍රියා කිරීම සහ ආරක්ෂාව සහ පාරිසරික අවශ්‍යතා සපුරාලීම සහතික කිරීම සඳහා ප්‍රවේශමෙන් සැලසුම් කිරීම අවශ්‍ය වේ. Sayerlack Water Based හි මැකී නොයන/ දිරාපත් නොවීම, වැසි ජලය/UV කිරණවලට ප්‍රතිරෝධය සහ ලුණු ඉසින වැනි සුවිශේෂී ලක්ෂණ ඇත, මන්ද එළිමහන් පරිසරයට නිරාවරණය වන දොරවල්, ජනෙල් රාමු සහ ලී වැඩ සඳහා වෙළඳපොලේ ඇති හොඳම දැව කල් තබා ගන්නා අයදුම්කරු අවශ්‍ය වේ."
+    },
+    "Product-Details":{
+        "title":"නිෂ්පාදන විස්තර",
+        "volume":"පරිමාව",
+        "finish":"අවසන් කරන්න",
+        "finishings":"Gloss | Semi Gloss | Matte"
+    },
+    "Special":{
+        "title":"විශේෂත්වය කුමක්ද?",
+        "uv":"UV ආරක්ෂණයn",
+        "strong":"ශක්තිමත් මැලියම් සහ ප්රතිරෝධය"
+    },
+    "Colors":{
+        "title":"නිෂ්පාදන වර්ණ"
+    },
+    "Instructions":{
+        "title":"උපදෙස් අත්පොත"
+    },
+    "Offer":{
+        "title":"සියලුම Sayerlack නිෂ්පාදන සඳහා",
+        "about":"ගනුදෙනුව බලන්න"
+    },
+    "Certifications":{
+        "title":"සහතික"
+    },
+    "R-Products":{
+        "title":" අදාළ නිෂ්පාදන"
+    },
+    "Jat":{
+        "title":"JAT Holdings PLC",
+        "about":"අවකාශ වෙනස් කිරීමේ කලාප™"
+    },
+    "Jat-abt":{
+        "title":"සමාගම ගැන",
+        "about":"1993 දී සංස්ථාපිත වූ දා සිට, JAT Holdings PLC මූල්‍ය ශක්තියෙන්, ආයතනික කීර්තියෙන් සහ සන්නාම පිළිගැනීමෙන් වර්ධනය වී ශ්‍රී ලංකාවේ දැව ආලේපනවල ප්‍රමුඛයා වීමේ ගමනේ සන්ධිස්ථාන රැසකට ළඟා විය."
+    },
+    "brands":{
+        "title":"වෙළඳ නාම"
+    },
+    "product-cat":{
+        "title":"නිෂ්පාදන ප්‍රභේද"
+    },
+    "product":{
+        "title":"නිෂ්පාදන"
+    },
+    "LocaleSwitcher":{
+        "label":"භාෂාව වෙනස් කරන්න",
+        "locale":"{locale, select, sin {SIN} en {EN} other {Unknown}}"
+    }
+
+
+}

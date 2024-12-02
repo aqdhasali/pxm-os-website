@@ -3,6 +3,7 @@
 import {useState} from "react";
 import "../../globals.css";
 import {Inter} from "next/font/google";
+import { useTranslations } from "next-intl";
 
 const inter = Inter({
     subsets : ["latin"],
@@ -11,6 +12,7 @@ const inter = Inter({
 
 
 export default function Sayerlack(){
+    const t  = useTranslations('Sayerlack')
 
     const [showForm, setShowForm] = useState(false)
 
@@ -38,17 +40,17 @@ export default function Sayerlack(){
             </div>
 
             <div className="flex flex-col gap-2 text-center">
-                <h2 className="text-2xl  font-bold">Sayerlack Waterbase Exterior Topcoat</h2>
-                <p>Preserving the Integrity of Wooden Surfaces</p>
+                <h2 className="text-2xl  font-bold">{t('title')}</h2>
+                <p>{t('about')}</p>
             </div>
 
             <div className="flex gap-2 ">
-                <div className="flex items-center justify-center h-8 w-28 rounded-lg border border-green text-green">Waterbase</div>
-                <div className="flex items-center justify-center w-28 h-8 text-center rounded-lg border border-green text-green">Paint</div>
+                <div className="flex items-center justify-center h-8 w-28 rounded-lg border border-green text-green">{t('waterbase')}</div>
+                <div className="flex items-center justify-center w-28 h-8 text-center rounded-lg border border-green text-green">{t('paint')}</div>
             </div>
 
             <div className="mb-5 flex justify-center items-center w-60 h-14 bg-black cursor-pointer rounded-lg" onClick={handleFeedbackClick}>
-                <h2 className="text-xl text-white text-center">Feedback / Inquiry</h2>
+                <h2 className="text-xl text-white text-center">{t('button-text')}</h2>
             </div>
 
             {showForm && (
@@ -56,8 +58,8 @@ export default function Sayerlack(){
                     <div className="flex flex-col gap-5 w-96 bg-[#ffffff] rounded-lg m-5 p-5">
                         <div className="flex justify-between">
                             <div className="flex flex-col gap-2">
-                                <h2 className="text-xl font-semibold tracking-tight">Feedback / Inquiry</h2>
-                                <p>Fill out the form below with your feedback or inquiries</p>
+                                <h2 className="text-xl font-semibold tracking-tight">{t('button-text')}</h2>
+                                <p>{t('form-about')}</p>
                             </div>
             
                             <div className="cursor-pointer" onClick={handleCloseForm}>
@@ -69,10 +71,10 @@ export default function Sayerlack(){
                         <div>
                             <div className="flex w-full border-2  h-10 border-green rounded-md">
                                 <div className="flex items-center justify-center w-48 bg-green rounded-md text-center">
-                                    <span className="text-white">Feedback</span>
+                                    <span className="text-white">{t('feedback')}</span>
                                 </div>
                                 <div className="flex items-center justify-center w-48 text-center">
-                                    <span>Inquiry</span>
+                                    <span>{t('inquiry')}</span>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +101,7 @@ export default function Sayerlack(){
                             </div>
                         </div>
             
-                        <div className="flex items-center justify-center bg-green w-full rounded-md text-xl text-white h-12">Submit</div>
+                        <div className="flex items-center justify-center bg-green w-full rounded-md text-xl text-white h-12">{t('submit')}</div>
                 </div>
             </div>
             )}

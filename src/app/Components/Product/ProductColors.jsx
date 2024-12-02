@@ -1,7 +1,10 @@
+import { useTranslations } from "next-intl"
+
 export default function ProductColors(){
+    const t = useTranslations('Colors')
     return(
         <div className="flex flex-col sm-screen-2 sm-screen md-screen lg-screen gap-2 w-auto p-5 m-6 bg-[#ffffff] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl">
-            <h2 className="text-xl font-bold tracking-tight">Product Colors</h2>
+            <h2 className="text-xl font-bold tracking-tight">{t('title')}</h2>
             <div className="flex gap-2 z-20">
                 <div className="relative group ">
                     <img className="h-10 w-10 sm-width" src="Ellipse1.svg" alt="Ellipse8" />

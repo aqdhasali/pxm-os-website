@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 export default function Certifications() {
+  const t = useTranslations('Certifications')
   const [boxHeight, setboxHeight] = useState("142px");
   const [text, setText] = useState("View All");
   const [isActive, setIsActive] = useState(false);
@@ -18,7 +20,7 @@ export default function Certifications() {
   };
   return (
     <div className="flex flex-col sm-screen sm-screen-2 md-screen lg-screen gap-2 w-auto p-5 m-6 bg-[#ffffff] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl">
-      <h2 className="text-xl font-bold tracking-tight">Certifications</h2>
+      <h2 className="text-xl font-bold tracking-tight">{t('title')}</h2>
 
       <div
         className="flex flex-col gap-2 overflow-hidden"

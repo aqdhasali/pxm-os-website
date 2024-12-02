@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl"
 import { useState } from "react"
 
 export default function ProductCatergories(){
+    const t = useTranslations('product-cat')
     const [boxHeight, setboxHeight] = useState('150px')
     const [text, setText] = useState('View Less')
     const [isActive, setIsActive] = useState(false)
@@ -19,7 +21,7 @@ export default function ProductCatergories(){
     } 
     return(
         <div className="flex flex-col gap-5 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl w-auto bg-[#ffffff] p-5 m-5 sm-screen md-screen lg-screen sm-screen-2">
-            <h1 className="text-xl font-bold tracking-tight">Product Categories</h1>
+            <h1 className="text-xl font-bold tracking-tight">{t('title')}</h1>
 
             <div className="grid grid-cols-2 justify-center gap-7 items-center overflow-hidden" style={{height: boxHeight}}>
                 <div className="flex flex-col items-center">

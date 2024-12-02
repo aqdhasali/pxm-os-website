@@ -20,24 +20,24 @@ import Brands from "./Company/Brands";
 import ProductCatergories from "./Company/ProductCategories";
 import Product from "./Company/Products";
 import ProductColors from "./Product/ProductColors";
+import {useTranslations} from 'next-intl';
+import { useRouter, usePathname } from "next/navigation"; // Importing Next.js router
+import LocaleSwitcher from "./LocaleSwitcher";
 
 
 
 export default function Header(){
+    const t = useTranslations('Header');
     const [selectedContent, setSelectedContent] = useState('product');
     const [scrollProgress, setScrollProgress] = useState(0);
     const [showPopup, setShowPopup] = useState(false);
-    const [selectedLanguage, setSelectedLanguage] = useState("EN")
 
 
     const togglePopup = () =>{
         setShowPopup(!showPopup);
     } 
 
-    const handleLanguageChange = (language) =>{
-        setSelectedLanguage(language);
-        setShowPopup(false);
-    }
+
 
     const handleTabClick = (tab) =>{
         setSelectedContent(tab)
@@ -68,9 +68,9 @@ export default function Header(){
 
                     <div>
                         <div className="flex items-center justify-center gap-4">
-                            <div className="flex items-center justify-center gap-2 w-28 h-11 border-2 border-black rounded-md">
+                            <div className="flex items-center justify-center w-auto h-11 border-2 border-black rounded-md">
                                 <img className="" src="left-icon.svg"></img>
-                                <span>{selectedLanguage}</span>
+                                <LocaleSwitcher/>
                                 <img className="w-8" src="right-icon.svg" onClick={togglePopup}></img>
                             </div>
                             <img className="w-5 h-5" src="share.svg"></img>
@@ -78,10 +78,10 @@ export default function Header(){
                     </div>
                 </div>
 
-                {showPopup &&(
+                {/* {showPopup &&(
                     <div className="absolute items-center top-14 w-28 right-2 bg-[#f3f3f3] shadow-lg rounded-lg">
                         <ul>
-                            {["EN","SIN","AR"].map((language) =>(
+                            {["EN","SIN"].map((language) =>(
                                 <li key={language}
                                 className={`p-2 text-center cursor-pointer hover:bg-gray-100 ${selectedLanguage == language ? "font-bold" : ""}`}
                                 onClick={() => handleLanguageChange(language)}>
@@ -90,7 +90,7 @@ export default function Header(){
                             ))}
                         </ul>
                     </div>
-                )}
+                )} */}
 
                 {/* Product and company buttons */}
                 <div className="flex m-5 border-2 h-10 border-green rounded-lg overflow-hidden cursor-pointer">
@@ -100,14 +100,14 @@ export default function Header(){
                         }`}
                     onClick ={() => handleTabClick('product')}
                     >
-                        <span>PRODUCT</span>
+                        <span>{t('product')}</span>
                     </div>
                     <div 
                     onClick={() => handleTabClick('company')}
                     className = {`flex items-center justify-center w-1/2 text-center cursor-pointer ${
                         selectedContent === 'company' ? 'bg-green border-green rounded-md text-white' : 'rounded-md bg-white text-black'
                     }`}>
-                        <span>COMPANY</span>
+                        <span>{t('company')}</span>
                     </div>
                 </div>
 

@@ -1,7 +1,9 @@
 import { useSearchParams } from "next/navigation"
 import {useState} from "react";
+import {useTranslations} from "next-intl"
 
 export default function RelatedProducts(){
+    const t = useTranslations('R-Products')
     const [boxHeight, setboxHeight] = useState('180px')
     const [text, setText] = useState('View All')
     const [isActive, setIsActive] = useState(false)
@@ -20,7 +22,7 @@ export default function RelatedProducts(){
     return(
         <div className="flex flex-col  sm-screen-2 sm-screen md-screen lg-screen gap-2 w-auto p-5 m-6 bg-[#ffffff] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl">
             <div>
-                <h2 className="text-xl font-bold tracking-tight">Related Products</h2>
+                <h2 className="text-xl font-bold tracking-tight">{t('title')}</h2>
             </div>
 
             <div className="grid grid-cols-2 items-center mt-2 justify-center gap-2 ml-7 overflow-hidden" style={{height: boxHeight}} >

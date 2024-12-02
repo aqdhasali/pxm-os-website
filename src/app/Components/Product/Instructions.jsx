@@ -1,3 +1,5 @@
+import { useTranslations } from "next-intl";
+
 export default function Instructions(){
 
     const handlePdfDownload = () => {
@@ -6,9 +8,11 @@ export default function Instructions(){
         link.download = "jat.pdf";
         link.click();
     }
+
+    const t = useTranslations('Instructions')
     return(
         <div className="flex flex-col  sm-screen sm-screen-2 md-screen lg-screen gap-2 w-auto p-5 m-6 bg-[#ffffff] rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl">
-            <h2 className="text-xl font-bold tracking-tight">Instruction Manual</h2>
+            <h2 className="text-xl font-bold tracking-tight">{t('title')}</h2>
 
             <div className="flex items-center justify-between p-2 border w-full">
                 <div className="flex gap-2">

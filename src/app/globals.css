@@ -72,3 +72,13 @@
     position: relative;
     min-width: 100%; /* Full width slide */
 }
+
+.rtl{
+    direction: rtl;          /* Set text direction to right-to-left */
+    text-align: right;  
+}
+
+.ltr{
+    direction: ltr;         /* Set text direction to left-to-right */
+    text-align: left;
+}

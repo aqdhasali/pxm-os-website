@@ -23,7 +23,7 @@ export default function ProductCatergories(){
         }
     } 
     return(
-        <div className="flex flex-col gap-5 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl w-auto bg-[#ffffff] p-5 m-5 sm-screen md-screen lg-screen sm-screen-2">
+        <div className="flex flex-col gap-9 rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl w-auto bg-[#ffffff] p-5 m-5 sm-screen md-screen lg-screen sm-screen-2">
             <h1 className="text-xl font-bold tracking-tight">{t('title')}</h1>
 
             <div className="grid grid-cols-2 justify-center gap-7 items-center overflow-hidden" style={{height: boxHeight}}>

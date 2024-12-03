@@ -49,7 +49,13 @@
     "R-Products":{
         "title":" අදාළ නිෂ්පාදන",
         "view-all" : "සියල්ල බලන්න",
-        "view-less": "අඩුවෙන් බලන්න"
+        "view-less": "අඩුවෙන් බලන්න",
+        "pu-paint": "සයර්ලැක් PU තීන්ත",
+        "sayerlack-wb": "සයර්ලැක් ජල පදනම් කරගත්",
+        "sayerlack-pu": "සයර්ලැක් පොලියුරේතන්",
+        "j-chem": "J CHEM යටභූමිය තීන්ත",
+        "j-chem-sol": "J CHEM ද්‍රාවක පදනම් කරගත් ලී ආවරණ",
+        "borma-w": "බෝර්මා වැක්ස් ලී තීන්ත"
     },
     "Jat":{
         "title":"JAT Holdings PLC",

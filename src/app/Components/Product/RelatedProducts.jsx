@@ -10,6 +10,7 @@ export default function RelatedProducts(){
     const [text, setText] = useState(viewAll)
     const [isActive, setIsActive] = useState(false)
 
+
     const handleClick = () =>{
         setIsActive(!isActive)
 
@@ -30,32 +31,32 @@ export default function RelatedProducts(){
             <div className="grid grid-cols-2 items-center mt-2 justify-center gap-2 ml-2 overflow-hidden" style={{height: boxHeight}} >
                 <div className="flex items-center text-center flex-col gap-2 ">
                     <img className="w-28 rounded-lg " src="SAYERLACK-PU.jpg"></img>
-                    <p className="text-lg">Sayerlack PU Paints</p>
+                    <p className="text-lg">{t('pu-paint')}</p>
                 </div>
                 
                 <div className="flex items-center text-center flex-col gap-2 ">
                     <img className="w-28 rounded-lg" src="SAYERLACK-WB.jpg"></img>
-                    <p className="text-lg">Sayerlack Waterbase</p>
+                    <p className="text-lg">{t('sayerlack-wb')}</p>
                 </div> 
                 
                 <div className="flex items-center text-center flex-col gap-2 ">
                     <img className="w-28 rounded-lg" src="SAYERLACK-PE.jpg"></img>
-                    <p className="text-lg">Sayerlack Polyurethane</p>
+                    <p className="text-lg">{t('sayerlack-pu')}</p>
                 </div> 
                 
                 <div className="flex items-center text-center flex-col gap-2 ">
                     <img className="w-28 rounded-lg" src="4-litre-J-CHEM-Floor-Paint.png"></img>
-                    <p className="text-lg">J CHREM Floor Paint</p>
+                    <p className="text-lg">{t('j-chem')}</p>
                 </div>
                 
                 <div className="flex items-center text-center flex-col gap-2 ">
                     <img className="w-28 rounded-lg" src="JCHEM-SOLVENTASE-WOOD-COATINGS.png"></img>
-                    <p className="text-lg">J CHEM Solvent based Wood Coating</p>
+                    <p className="text-lg">{t('j-chem-sol')}</p>
                 </div>
                 
                 <div className="flex items-center text-center flex-col gap-2 ">
                     <img className="w-28 rounded-lg" src="Small-tub-of-Water-Based-Wood-Putty-by-BORMA-WACHS.png"></img>
-                    <p className="text-lg">Borma Wachs Woody Paint</p>
+                    <p className="text-lg">{t('borma-w')}</p>
                 </div>
             </div>
             

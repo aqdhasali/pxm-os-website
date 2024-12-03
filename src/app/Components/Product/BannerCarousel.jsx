@@ -28,15 +28,15 @@ export default function BannerCarousel(){
             <div className="embla" ref={emblaRef}>
                 <div className="embla__container">
                     <div className="embla__slide"> 
-                        <video className="w-auto rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl" preload="auto" controls={false} autoPlay loop muted src="1119.mp4"></video>
+                        <video className="w-auto rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl pointer-events-none" preload="auto" controls={false} autoPlay playsInline webkit-playsinline loop muted src="1119.mp4"></video>
                     </div>
                     
                     <div className="embla__slide"> 
-                        <video className="w-auto rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl" preload="auto" controls={false} autoPlay loop muted  src="1119.mp4"></video>
+                        <video className="w-auto rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl pointer-events-none" preload="auto" controls={false} autoPlay muted playsInline webkit-playsinline loop src="1119.mp4"></video>
                     </div>
                     
                     <div className="embla__slide"> 
-                        <video className="w-auto rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl" preload="auto" controls={false} autoPlay loop muted src="1119.mp4"></video>
+                        <video className="w-auto rounded-tl-2xl rounded-tr-2xl rounded-bl-2xl rounded-br-2xl pointer-events-none" preload="auto" controls={false} autoPlay playsInline webkit-playsinline loop muted src="1119.mp4"></video>
                     </div>
                 </div>
 

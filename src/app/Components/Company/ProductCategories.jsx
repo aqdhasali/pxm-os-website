@@ -4,8 +4,9 @@ import { useState } from "react"
 export default function ProductCatergories(){
     const t = useTranslations('product-cat')
     const [boxHeight, setboxHeight] = useState('150px')
-    const [text, setText] = useState('View Less')
+    const [text, setText] = useState('View All')
     const [isActive, setIsActive] = useState(false)
+    
 
 
     const handleClick = () =>{

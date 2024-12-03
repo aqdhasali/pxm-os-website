@@ -25,7 +25,7 @@ export default function RelatedProducts(){
                 <h2 className="text-xl font-bold tracking-tight">{t('title')}</h2>
             </div>
 
-            <div className="grid grid-cols-2 items-center mt-2 justify-center gap-2 ml-7 overflow-hidden" style={{height: boxHeight}} >
+            <div className="grid grid-cols-2 items-center mt-2 justify-center gap-2 ml-2 overflow-hidden" style={{height: boxHeight}} >
                 <div className="flex items-center text-center flex-col gap-2 ">
                     <img className="w-28 rounded-lg " src="SAYERLACK-PU.jpg"></img>
                     <p className="text-lg">Sayerlack PU Paints</p>

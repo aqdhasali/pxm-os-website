@@ -30,15 +30,7 @@ export default function Header(){
     const t = useTranslations('Header');
     const [selectedContent, setSelectedContent] = useState('product');
     const [scrollProgress, setScrollProgress] = useState(0);
-    const [showPopup, setShowPopup] = useState(false);
-
-
-    const togglePopup = () =>{
-        setShowPopup(!showPopup);
-    } 
-
-
-
+  
     const handleTabClick = (tab) =>{
         setSelectedContent(tab)
     }
@@ -68,29 +60,15 @@ export default function Header(){
 
                     <div>
                         <div className="flex items-center justify-center gap-4">
-                            <div className="flex items-center justify-center w-auto h-11 border-2 border-black rounded-md">
-                                <img className="" src="left-icon.svg"></img>
-                                <LocaleSwitcher/>
-                                <img className="w-8" src="right-icon.svg" onClick={togglePopup}></img>
+                            <div className="flex items-center justify-center  w-auto h-11 border-2 border-black rounded-md">
+                                <img className="pl-2" src="left-icon.svg"></img>
+                                <LocaleSwitcher/>   
                             </div>
                             <img className="w-5 h-5" src="share.svg"></img>
                         </div>
                     </div>
                 </div>
 
-                {/* {showPopup &&(
-                    <div className="absolute items-center top-14 w-28 right-2 bg-[#f3f3f3] shadow-lg rounded-lg">
-                        <ul>
-                            {["EN","SIN"].map((language) =>(
-                                <li key={language}
-                                className={`p-2 text-center cursor-pointer hover:bg-gray-100 ${selectedLanguage == language ? "font-bold" : ""}`}
-                                onClick={() => handleLanguageChange(language)}>
-                                    {language}
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                )} */}
 
                 {/* Product and company buttons */}
                 <div className="flex m-5 border-2 h-10 border-green rounded-lg overflow-hidden cursor-pointer">

@@ -20,7 +20,7 @@ import Brands from "./Company/Brands";
 import ProductCatergories from "./Company/ProductCategories";
 import Product from "./Company/Products";
 import ProductColors from "./Product/ProductColors";
-import {useTranslations} from 'next-intl';
+import {useLocale, useTranslations} from 'next-intl';
 import { useRouter, usePathname } from "next/navigation"; // Importing Next.js router
 import LocaleSwitcher from "./LocaleSwitcher";
 
@@ -30,6 +30,7 @@ export default function Header(){
     const t = useTranslations('Header');
     const [selectedContent, setSelectedContent] = useState('product');
     const [scrollProgress, setScrollProgress] = useState(0);
+    const locale = useLocale();
   
     const handleTabClick = (tab) =>{
         setSelectedContent(tab)
@@ -52,7 +53,7 @@ export default function Header(){
 
 
     return(
-        <>
+        <div className={locale === 'ar' ? 'rtl' : 'ltr'}>
             <div className="bg-[#ffffff]  md-screen-width w-full fixed top-0 h-44 z-50 shadow-md sm:w-screen md:w-screen lg:w-screen">
                 {/* Logo and Language Button */}
                 <div className=" scrollbar-hide flex justify-between p-5">
@@ -124,7 +125,7 @@ export default function Header(){
                         </div>
                     )}
                 </div>
-        </>
+        </div>
         
     )
 }

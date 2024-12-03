@@ -4,8 +4,10 @@ import { useState } from "react"
 export default function SayerlackContent(){
 
     const t = useTranslations('Sayerlack-Content');
+    const l = t('learn-more')
+    const h = t('hide')
     const [boxHeight, setboxHeight] = useState('199px')
-    const [text, setText] = useState('Learn More')
+    const [text, setText] = useState(l)
     const [isActive, setIsActive] = useState('false')
     
 
@@ -15,10 +17,10 @@ export default function SayerlackContent(){
 
         if(isActive){
             setboxHeight('199px')
-            setText('Learn More')
+            setText(l)
         } else{
             setboxHeight('auto')
-            setText('Hide')
+            setText(h)
         }
         
     }

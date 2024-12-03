@@ -18,7 +18,7 @@ export default function Product(){
                 </div>
             </div>
 
-            <div className="flex items-center justify-center bg-green w-full rounded-md text-l text-white h-12">View All</div>
+            <div className="flex items-center justify-center bg-green w-full rounded-md text-l text-white h-12">{t('view-all')}</div>
 
 
         </div>

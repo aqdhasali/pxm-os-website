@@ -3,19 +3,22 @@ import { useState } from "react";
 
 export default function Certifications() {
   const t = useTranslations('Certifications')
+  const viewAll  = t('view-all')
+  const viewLess = t('view-less')
   const [boxHeight, setboxHeight] = useState("142px");
-  const [text, setText] = useState("View All");
+  const [text, setText] = useState(viewAll);
   const [isActive, setIsActive] = useState(false);
+  
 
   const handleClick = () => {
     setIsActive(!isActive);
 
     if (isActive) {
       setboxHeight("142px");
-      setText("View All");
+      setText(viewAll);
     } else {
       setboxHeight("auto");
-      setText("View Less");
+      setText(viewLess);
     }
   };
   return (

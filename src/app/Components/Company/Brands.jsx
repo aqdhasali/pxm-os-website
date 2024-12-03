@@ -3,8 +3,10 @@ import { useState } from "react"
 
 export default function Brands(){
     const t = useTranslations('brands')
+    const viewAll  = t('view-all')
+    const viewLess = t('view-less')
     const [boxHeight, setBoxHeight] = useState('180px')
-    const [text, setText] = useState('View All')
+    const [text, setText] = useState(viewAll)
     const [isActive, setIsActive] = useState(false)
 
 
@@ -13,10 +15,10 @@ export default function Brands(){
 
         if(isActive){
             setBoxHeight('180px')
-            setText('View All')
+            setText(viewAll)
         } else{
             setBoxHeight('auto')
-            setText('View Less')
+            setText(viewLess)
         }
         
     }

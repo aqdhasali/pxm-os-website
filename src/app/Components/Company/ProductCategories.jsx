@@ -3,8 +3,10 @@ import { useState } from "react"
 
 export default function ProductCatergories(){
     const t = useTranslations('product-cat')
+    const viewAll  = t('view-all')
+    const viewLess = t('view-less')
     const [boxHeight, setboxHeight] = useState('150px')
-    const [text, setText] = useState('View All')
+    const [text, setText] = useState(viewAll)
     const [isActive, setIsActive] = useState(false)
     
 
@@ -14,10 +16,10 @@ export default function ProductCatergories(){
 
         if(isActive){
             setboxHeight('150px')
-            setText('View All')
+            setText(viewAll)
         } else{
             setboxHeight('auto')
-            setText('View Less')
+            setText(viewLess)
         }
     } 
     return(

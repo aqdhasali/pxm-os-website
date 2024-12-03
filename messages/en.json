@@ -16,7 +16,9 @@
     },
     "Sayerlack-Content":{
         "title":"About Sayerlack Water Base",
-        "about":"Sayerlack is the flagship brand distributed by JAT Holdings PLC. Initiated in 1954, Sayerlack Wood Coatings is an Italian origin brand owned by Sherwin Williams that provides the most innovative and highest quality wood coatings in the industry. Sherwin Williams is recognized as the largest producer of wood coatings in the world due to the new technologies it adopts and for its commitment to research and development.With 28 years of experience in distributing Sayerlack in Sri Lanka and across South Asia, JAT Holdings is recognized as the number 1 partner for Sayerlack in the world. JAT Holdings PLC was the pioneer to introduce Waterbase wood coatings to Sri Lanka. Water-based coatings revolutionized the industry by giving consumers an environmentally friendly alternative with 95% lower harmful emissions than synthetic products, ensuring workers’ health and safety.Sayerlack is the market leader in wood coatings and a trusted brand that is loved amongst Sri Lankan customers in the residential and industrial sectors. The brand has been recognized amongst the Top 100 Most Valuable Consumer Brands in Sri Lanka in the Brands Annual 2022 list by LMD."
+        "about":"Sayerlack is the flagship brand distributed by JAT Holdings PLC. Initiated in 1954, Sayerlack Wood Coatings is an Italian origin brand owned by Sherwin Williams that provides the most innovative and highest quality wood coatings in the industry. Sherwin Williams is recognized as the largest producer of wood coatings in the world due to the new technologies it adopts and for its commitment to research and development.With 28 years of experience in distributing Sayerlack in Sri Lanka and across South Asia, JAT Holdings is recognized as the number 1 partner for Sayerlack in the world. JAT Holdings PLC was the pioneer to introduce Waterbase wood coatings to Sri Lanka. Water-based coatings revolutionized the industry by giving consumers an environmentally friendly alternative with 95% lower harmful emissions than synthetic products, ensuring workers’ health and safety.Sayerlack is the market leader in wood coatings and a trusted brand that is loved amongst Sri Lankan customers in the residential and industrial sectors. The brand has been recognized amongst the Top 100 Most Valuable Consumer Brands in Sri Lanka in the Brands Annual 2022 list by LMD.",
+        "learn-more":"Learn More",
+        "hide":"Hide"
     },
     "Product-Details":{
         "title":"Product Details",
@@ -40,30 +42,42 @@
         "about":"VIEW DEAL"
     },
     "Certifications":{
-        "title":"Certifications"
+        "title":"Certifications",
+        "view-all" : "View All",
+        "view-less": "View Less"
     },
     "R-Products":{
-        "title":"Related Products"
+        "title":"Related Products",
+        "view-all" : "View All",
+        "view-less": "View Less"
     },
     "Jat":{
         "title":"JAT Holdings PLC",
         "about":"Transforming Spaces™"
     },
     "Jat-abt":{
-        "title":"About Compnay",
-        "about":"Since its incorporation in 1993, JAT Holdings PLC has grown in financial strength, corporate reputation and brand recognition reaching many milestones in its journey of becoming the leader in wood coatings in Sri Lanka. In 2015, JAT Holdings PLC was named as one of the Top Strongest Conglomerate Brands in the country through diversification. Furthermore, the company was awarded the title of the Largest Distributor of Sayerlack in the world. Since 2016, the company made it to the Top 100 Most Respected Companies adjudged by LMD for four consecutive years. More recently, JAT Holdings PLC was ranked amongst LMD’s Top 20 Conglomerate Brands in Sri Lanka as stated in Brands Annual 2020, an independent survey conducted by Brand Finance, the World’s largest brand valuation and strategy consultancy firm.  The Group’s strategic aspirations are driven by a spirited team of over 400 employees, under the visionary leadership, guidance and direction of  the Founder and Managing Director, Aelian Gunawardene "
+        "title":"About Company",
+        "about":"Since its incorporation in 1993, JAT Holdings PLC has grown in financial strength, corporate reputation and brand recognition reaching many milestones in its journey of becoming the leader in wood coatings in Sri Lanka. In 2015, JAT Holdings PLC was named as one of the Top Strongest Conglomerate Brands in the country through diversification. Furthermore, the company was awarded the title of the Largest Distributor of Sayerlack in the world. Since 2016, the company made it to the Top 100 Most Respected Companies adjudged by LMD for four consecutive years. More recently, JAT Holdings PLC was ranked amongst LMD’s Top 20 Conglomerate Brands in Sri Lanka as stated in Brands Annual 2020, an independent survey conducted by Brand Finance, the World’s largest brand valuation and strategy consultancy firm.  The Group’s strategic aspirations are driven by a spirited team of over 400 employees, under the visionary leadership, guidance and direction of  the Founder and Managing Director, Aelian Gunawardene ",
+        "learn-more":"Learn More",
+        "hide":"Hide"
     },
     "brands":{
-        "title":"Brands"
+        "title":"Brands",
+        "view-all" : "View All",
+        "view-less": "View Less"
     },
     "product-cat":{
-        "title":"Product Catergories"
+        "title":"Product Catergories",
+        "view-all" : "View All",
+        "view-less": "View Less"
     },
     "product":{
-        "title":"Product"
+        "title":"Product",
+        "view-all" : "View All",
+        "view-less": "View Less"
     },
     "LocaleSwitcher":{
         "label":"Change Language",
-        "locale":"{locale, select, sin {SIN} en {EN} other {Unknown}}"
+        "locale":"{locale, select, sin {SIN} en {EN} ar {AR} other {Unknown}}"
     }
 }

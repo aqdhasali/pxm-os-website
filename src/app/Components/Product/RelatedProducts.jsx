@@ -4,8 +4,10 @@ import {useTranslations} from "next-intl"
 
 export default function RelatedProducts(){
     const t = useTranslations('R-Products')
+    const viewAll  = t('view-all')
+    const viewLess = t('view-less')
     const [boxHeight, setboxHeight] = useState('180px')
-    const [text, setText] = useState('View All')
+    const [text, setText] = useState(viewAll)
     const [isActive, setIsActive] = useState(false)
 
     const handleClick = () =>{
@@ -13,10 +15,10 @@ export default function RelatedProducts(){
 
         if(isActive){
             setboxHeight('180px')
-            setText('View All')
+            setText(viewAll)
         } else{
             setboxHeight('auto')
-            setText('View Less')
+            setText(viewLess)
         }
     }
     return(
